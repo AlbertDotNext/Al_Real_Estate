@@ -6,7 +6,7 @@ function VideoPopup(props) {
     <div className="popup">
       <div className="popup-inner">
         <button className="close-btn" onClick={() => props.setTrigger(false)}>
-          X
+          <i class="far fa-times-circle"></i>
         </button>
         {props.children}
       </div>
