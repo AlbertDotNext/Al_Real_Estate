@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { Button } from "./Button";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
   window.addEventListener("resize", showButton);
 
   return (
-    <div>
+    <>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
@@ -73,7 +73,7 @@ const Navbar = () => {
           {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 
