@@ -42,8 +42,3 @@
   color: #242424;
   transition: 250ms;
 }
-
-@media (max-width: 960px) {
-  .btn .btn--primary {
-  }
-}
