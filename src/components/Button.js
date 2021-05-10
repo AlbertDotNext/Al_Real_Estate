@@ -19,7 +19,7 @@ export const Button = ({
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-  return (
+  return buttonStyle === "btn--outline" ? (
     <Link to="/sign-up" className="btn-mobile">
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
@@ -29,5 +29,13 @@ export const Button = ({
         {children}
       </button>
     </Link>
+  ) : (
+    <button
+      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      onClick={onClick}
+      type={type}
+    >
+      {children}
+    </button>
   );
 };
