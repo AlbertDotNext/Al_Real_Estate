@@ -66,7 +66,7 @@ function Footer() {
           <div class="footer-logo">
             <Link to="/" className="social-logo">
               Al's Real Estate
-              <i class="fab fa-typo3" />
+              <i class="fas fa-home" />
             </Link>
           </div>
           <small class="website-rights">AL's Real Estate © 2021</small>
